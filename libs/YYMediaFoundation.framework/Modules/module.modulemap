@@ -1,0 +1,6 @@
+framework module YYMediaFoundation {
+  umbrella header "YYMediaFoundation.h"
+
+  export *
+  module * { export * }
+}
