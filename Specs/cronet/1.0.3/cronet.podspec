@@ -12,7 +12,7 @@ Pod::Spec.new do |spec|
   spec.author       = { 'Your Company' => 'email@example.com' }
   spec.ios.deployment_target = "9.0"
 
-  spec.source       = { :http => "ftp:///Users/pengjun/Documents/money/ios_sdk/Cronet.zip"}
+  spec.source       = { :http => "https://p-template-hk.oss-cn-hongkong.aliyuncs.com/ios_sdk/Cronet.zip"}
   # spec.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64 x86_64' }
   # spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64 x86_64' }
   # system("echo cronet")

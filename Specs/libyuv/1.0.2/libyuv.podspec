@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
 	s.homepage     = "http://libyuv.googlecode.com/svn/trunk/"
 	s.license      = {:type => 'BSD'}
     s.author       = { 'Your Company' => 'email@example.com'}
-	s.source       = {:http => "ftp:///Users/pengjun/Documents/money/ios_sdk/libyuv.zip"}
+	s.source       = {:http => "https://p-template-hk.oss-cn-hongkong.aliyuncs.com/ios_sdk/libyuv.zip"}
     # s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64 x86_64' }
     # s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64 x86_64' }
 	s.xcconfig = { 'HEADER_SEARCH_PATHS' => '${PODS_ROOT}/libyuv/include', 'LIBRARY_SEARCH_PATHS' => "${PODS_ROOT}/libyuv/libs" }

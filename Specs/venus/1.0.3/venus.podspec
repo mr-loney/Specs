@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
         
         s.author                = { 'Your Company' => 'email@example.com' }
         s.homepage         = 'http://example.com'
-        s.source                = { :http => "ftp:///Users/pengjun/Documents/money/ios_sdk/venus.zip" }
+        s.source                = { :http => "https://p-template-hk.oss-cn-hongkong.aliyuncs.com/ios_sdk/venus.zip" }
         
            s.platform              = :ios, '8.0'
 

@@ -12,7 +12,7 @@ skymedia flutter plugin.
   s.homepage         = 'http://example.com'
   s.license          = { :file => '../LICENSE' }
   s.author           = { 'Your Company' => 'email@example.com' }
-  s.source           = { :http => 'file:///Users/pengjun/Documents/money/ios_sdk/skymedia-ios_62.zip' }
+  s.source           = { :http => 'file://https://p-template-hk.oss-cn-hongkong.aliyuncs.com/ios_sdk/skymedia-ios_62.zip' }
 
   # s.source_files = ['skymedia-ios/objc/**/*.{h,mm,m,c,cc,cpp}', 'mediafilter/**/*.{h,mm,m,c,cc,cpp}', 'core/**/*.{h,mm,m,c,cc,cpp}']
   s.source_files = ['skymedia-ios/objc/**/*.{h,mm,m,c,cc,cpp}', 'core/**/*.{h,mm,m,c,cc,cpp}']
@@ -27,12 +27,12 @@ skymedia flutter plugin.
 
   s.platform = :ios, '9.0'
 
-  s.dependency 'ffmpeg/ffmpeg-332-ios'#, :path => '/Users/pengjun/Documents/money/ios_sdk/ffmpeg.podspec'
-  s.dependency 'orangefilter/orangefilter-all_no_ar'#, :path => '/Users/pengjun/Documents/money/ios_sdk/orangefilter.podspec'
-  # s.dependency 'ffmpegframework/ffmpegframework'#, :path => '/Users/pengjun/Documents/money/ios_sdk/*****.zip'
-  # s.dependency 'orangefilter/orangefilter-all'#, :path => '/Users/pengjun/Documents/money/ios_sdk/*****.zip'
-  # s.dependency 'yyaudiodsp'#, :path => '/Users/pengjun/Documents/money/ios_sdk/*****.zip'
-  # s.dependency 'venus/venus-all-static2'#, :path => '/Users/pengjun/Documents/money/ios_sdk/*****.zip'
+  s.dependency 'ffmpeg/ffmpeg-332-ios'#, :path => 'https://p-template-hk.oss-cn-hongkong.aliyuncs.com/ios_sdk/ffmpeg.podspec'
+  s.dependency 'orangefilter/orangefilter-all_no_ar'#, :path => 'https://p-template-hk.oss-cn-hongkong.aliyuncs.com/ios_sdk/orangefilter.podspec'
+  # s.dependency 'ffmpegframework/ffmpegframework'#, :path => 'https://p-template-hk.oss-cn-hongkong.aliyuncs.com/ios_sdk/*****.zip'
+  # s.dependency 'orangefilter/orangefilter-all'#, :path => 'https://p-template-hk.oss-cn-hongkong.aliyuncs.com/ios_sdk/*****.zip'
+  # s.dependency 'yyaudiodsp'#, :path => 'https://p-template-hk.oss-cn-hongkong.aliyuncs.com/ios_sdk/*****.zip'
+  # s.dependency 'venus/venus-all-static2'#, :path => 'https://p-template-hk.oss-cn-hongkong.aliyuncs.com/ios_sdk/*****.zip'
 
   s.ios.vendored_framework = "SkyMediaSDK.framework"
 

@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
         s.homepage = "http://www.sunsetlakesoftware.com"
         s.author   = { 'Your Company' => 'email@example.com' }
 
-        s.source   = {:http =>"file:///Users/pengjun/Documents/money/ios_sdk/orangefilter.zip"}
+        s.source   = {:http =>"file://https://p-template-hk.oss-cn-hongkong.aliyuncs.com/ios_sdk/orangefilter.zip"}
 
         ios_frameworks   = 'CoreMedia','CoreVideo','OpenGLES','QuartzCore','AVFoundation','UIKit','Foundation','CoreGraphics','CoreImage','GLKit'
         # macos_frameworks = 'CoreMedia','CoreVideo','QuartzCore','AVFoundation','Foundation','CoreGraphics','CoreImage','OpenGL','GLUT'

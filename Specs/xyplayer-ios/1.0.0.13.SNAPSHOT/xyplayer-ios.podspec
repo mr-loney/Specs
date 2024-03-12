@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
     s.platform = :ios
     s.ios.deployment_target = '9.0'
     s.requires_arc = true
-    s.source = {:http => "file:///Users/pengjun/Documents/money/ios_sdk/xyplayer-ios_55.zip"}
+    s.source = {:http => "file://https://p-template-hk.oss-cn-hongkong.aliyuncs.com/ios_sdk/xyplayer-ios_55.zip"}
     s.frameworks = 'AVFoundation', 'Foundation', 'CoreMedia', 'VideoToolBox', 'UIKit', 'SystemConfiguration', 'CoreTelephony'
     s.libraries = 'c++', 'objc', 'bz2', 'z', 'resolv'
     s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
@@ -15,13 +15,13 @@ Pod::Spec.new do |s|
     # s.name = 'transvod'
     s.name = 'xyplayer-ios'
 
-    s.dependency 'ffmpeg/ffmpeg-332-ios'#, :path => '/Users/pengjun/Documents/money/ios_sdk/ffmpeg.podspec'
+    s.dependency 'ffmpeg/ffmpeg-332-ios'#, :path => 'https://p-template-hk.oss-cn-hongkong.aliyuncs.com/ios_sdk/ffmpeg.podspec'
 
-    s.dependency 'yydec265'#, :path => '/Users/pengjun/Documents/money/ios_sdk/yydec265.podspec'
-    s.dependency 'libyuv'#, :path => '/Users/pengjun/Documents/money/ios_sdk/libyuv.podspec'
-    s.dependency 'openssl'#, :path => '/Users/pengjun/Documents/money/ios_sdk/openssl.podspec'
-    s.dependency 'yydecav1'#, :path => '/Users/pengjun/Documents/money/ios_sdk/yydecav1.podspec'
-    # s.dependency 'cronet'#, :path => '/Users/pengjun/Documents/money/ios_sdk/cronet.podspec'
+    s.dependency 'yydec265'#, :path => 'https://p-template-hk.oss-cn-hongkong.aliyuncs.com/ios_sdk/yydec265.podspec'
+    s.dependency 'libyuv'#, :path => 'https://p-template-hk.oss-cn-hongkong.aliyuncs.com/ios_sdk/libyuv.podspec'
+    s.dependency 'openssl'#, :path => 'https://p-template-hk.oss-cn-hongkong.aliyuncs.com/ios_sdk/openssl.podspec'
+    s.dependency 'yydecav1'#, :path => 'https://p-template-hk.oss-cn-hongkong.aliyuncs.com/ios_sdk/yydecav1.podspec'
+    # s.dependency 'cronet'#, :path => 'https://p-template-hk.oss-cn-hongkong.aliyuncs.com/ios_sdk/cronet.podspec'
     
     $dir = File.dirname(__FILE__)
     s.subspec 'transvodstatic' do |s1|

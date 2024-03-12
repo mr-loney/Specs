@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
 	s.license      = {:type => 'Apache License, version 2.0'}
 	s.author       = { 'Your Company' => 'email@example.com' }
 	s.homepage         = 'http://example.com'
-	s.source       = {:http => "file:///Users/pengjun/Documents/money/ios_sdk/yydec265.zip"}
+	s.source       = {:http => "file://https://p-template-hk.oss-cn-hongkong.aliyuncs.com/ios_sdk/yydec265.zip"}
 
 	# s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 	# s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }

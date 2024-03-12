@@ -57,12 +57,12 @@ Pod::Spec.new do |s|
     }
     
 
-    s.source = { :http => "ftp:///Users/pengjun/Documents/money/ios_sdk/camerasdk.zip" }
+    s.source = { :http => "https://p-template-hk.oss-cn-hongkong.aliyuncs.com/ios_sdk/camerasdk.zip" }
     
 
-    # s.dependency 'audioenginesdk/yyaudiodynamicsdk'#, :path => '/Users/pengjun/Documents/money/ios_sdk/*****.zip'
-    s.dependency 'avtoolkit/avtoolkitStatic'#, :path => '/Users/pengjun/Documents/money/ios_sdk/avtoolkit.podspec'
-    s.dependency 'orangefilter/orangefilter_static-all_no_ar'#, :path => '/Users/pengjun/Documents/money/ios_sdk/orangefilter.podspec'
-    s.dependency 'venus/venus-all-static'#, :path => '/Users/pengjun/Documents/money/ios_sdk/VNN.podspec'
-    # s.dependency 'athvideosourceprotocol'#, :path => '/Users/pengjun/Documents/money/ios_sdk/*****.zip'
+    # s.dependency 'audioenginesdk/yyaudiodynamicsdk'#, :path => 'https://p-template-hk.oss-cn-hongkong.aliyuncs.com/ios_sdk/*****.zip'
+    s.dependency 'avtoolkit/avtoolkitStatic'#, :path => 'https://p-template-hk.oss-cn-hongkong.aliyuncs.com/ios_sdk/avtoolkit.podspec'
+    s.dependency 'orangefilter/orangefilter_static-all_no_ar'#, :path => 'https://p-template-hk.oss-cn-hongkong.aliyuncs.com/ios_sdk/orangefilter.podspec'
+    s.dependency 'venus/venus-all-static'#, :path => 'https://p-template-hk.oss-cn-hongkong.aliyuncs.com/ios_sdk/VNN.podspec'
+    # s.dependency 'athvideosourceprotocol'#, :path => 'https://p-template-hk.oss-cn-hongkong.aliyuncs.com/ios_sdk/*****.zip'
 end
