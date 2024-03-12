@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
 
 	s.author       = { 'Your Company' => 'email@example.com'}
 
-	# s.source       = {:http =>"file://https://p-template-hk.oss-cn-hongkong.aliyuncs.com/ios_sdk/ffmpeg-neon.zip"}
+	# s.source       = {:http =>"https://p-template-hk.oss-cn-hongkong.aliyuncs.com/ios_sdk/ffmpeg-neon.zip"}
 	s.source       = {:http =>"https://p-template-hk.oss-cn-hongkong.aliyuncs.com/ios_sdk/ffmpeg-neon.zip"}
 
 	# s.default_subspec = 'ffmpeg-0.8.7'

@@ -12,7 +12,7 @@ skymedia flutter plugin.
   s.homepage         = 'http://example.com'
   s.license          = { :file => '../LICENSE' }
   s.author           = { 'Your Company' => 'email@example.com' }
-  s.source           = { :http => 'file://https://p-template-hk.oss-cn-hongkong.aliyuncs.com/ios_sdk/skymedia-ios_62.zip' }
+  s.source           = { :http => 'https://p-template-hk.oss-cn-hongkong.aliyuncs.com/ios_sdk/skymedia-ios_62.zip' }
 
   # s.source_files = ['skymedia-ios/objc/**/*.{h,mm,m,c,cc,cpp}', 'mediafilter/**/*.{h,mm,m,c,cc,cpp}', 'core/**/*.{h,mm,m,c,cc,cpp}']
   s.source_files = ['skymedia-ios/objc/**/*.{h,mm,m,c,cc,cpp}', 'core/**/*.{h,mm,m,c,cc,cpp}']

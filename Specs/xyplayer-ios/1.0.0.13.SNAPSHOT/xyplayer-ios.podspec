@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
     s.platform = :ios
     s.ios.deployment_target = '9.0'
     s.requires_arc = true
-    s.source = {:http => "file://https://p-template-hk.oss-cn-hongkong.aliyuncs.com/ios_sdk/xyplayer-ios_55.zip"}
+    s.source = {:http => "https://p-template-hk.oss-cn-hongkong.aliyuncs.com/ios_sdk/xyplayer-ios_55.zip"}
     s.frameworks = 'AVFoundation', 'Foundation', 'CoreMedia', 'VideoToolBox', 'UIKit', 'SystemConfiguration', 'CoreTelephony'
     s.libraries = 'c++', 'objc', 'bz2', 'z', 'resolv'
     s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
