@@ -17,7 +17,6 @@ skymedia flutter plugin.
   s.public_header_files = 'Sky{*}.h'
 
   s.library = 'c++'
-  s.header_dir = 'SkyMediaSDK'
 
   s.platform = :ios, '9.0'
 
@@ -28,10 +27,10 @@ skymedia flutter plugin.
   s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   
   s.subspec 'default' do |sdc|
-      sdc.xcconfig       = {'HEADER_SEARCH_PATHS' => '${PODS_ROOT}/SkyMediaSDK/include','LD_RUNPATH_SEARCH_PATHS' => '@loader_path/../Frameworks'}
+      sdc.xcconfig       = {'HEADER_SEARCH_PATHS' => '${PODS_ROOT}/skymedia-ios/include','LD_RUNPATH_SEARCH_PATHS' => '@loader_path/../Frameworks'}
       sdc.source_files   = '**/*.h'
       sdc.preserve_paths = '*.framework'
-      sdc.ios.vendored_frameworks = "SkyMediaSDK.framework"
+      sdc.ios.vendored_frameworks = "libs/SkyMediaSDK.framework"
   end
 
 end
