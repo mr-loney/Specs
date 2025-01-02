@@ -20,33 +20,23 @@ skymedia flutter plugin.
 
   s.public_header_files = 'skymedia-ios/objc/Sky{*}.h'
 
-  # s.library = 'c++', 'venus_static',"vn_asr_static" ,"vn_audiodenoise_static" ,"vn_bodylandmark_static" ,"vn_clothesseg_static" ,"vn_cnn_static" ,"vn_core_static" ,"vn_face_static" ,"vn_gesture_static" ,"vn_hairseg_static" ,"vn_headseg_static" ,"vn_kits_static" ,"vn_new_gesture_static" ,"vn_palm_static" ,"vn_resources_static" ,"vn_sbseg_static" ,"vn_seg_static" ,"vn_segment_static" ,"vn_singodenoise_static" ,"vn_skyseg_static","yyaudiodsp"
   s.library = 'c++'
   s.header_dir = 'SkyMediaSDK'
-  
 
   s.platform = :ios, '9.0'
 
   s.dependency 'ffmpeg/ffmpeg-332-ios'#, :path => 'https://p-template-hk.oss-cn-hongkong.aliyuncs.com/ios_sdk/ffmpeg.podspec'
   s.dependency 'orangefilter/orangefilter-all_no_ar'#, :path => 'https://p-template-hk.oss-cn-hongkong.aliyuncs.com/ios_sdk/orangefilter.podspec'
-  # s.dependency 'ffmpegframework/ffmpegframework'#, :path => 'https://p-template-hk.oss-cn-hongkong.aliyuncs.com/ios_sdk/*****.zip'
-  # s.dependency 'orangefilter/orangefilter-all'#, :path => 'https://p-template-hk.oss-cn-hongkong.aliyuncs.com/ios_sdk/*****.zip'
-  # s.dependency 'yyaudiodsp'#, :path => 'https://p-template-hk.oss-cn-hongkong.aliyuncs.com/ios_sdk/*****.zip'
-  # s.dependency 'venus/venus-all-static2'#, :path => 'https://p-template-hk.oss-cn-hongkong.aliyuncs.com/ios_sdk/*****.zip'
 
-  s.ios.vendored_framework = "SkyMediaSDK.framework"
-
-  # $dir = File.dirname(__FILE__)
-
-  # Flutter.framework does not contain a i386 slice. Only x86_64 simulators are supported.
-  # s.pod_target_xcconfig = { "HEADER_SEARCH_PATHS" => [$dir + "/core", $dir + "/core/cmdline/apple_include", $dir + "/core/cmdline/apple_include/config", $dir + "/core/cmdline/apple_include/libavutil", $dir + "/core/cmdline/apple_include/libavcodec",
-  #   $dir + "/mediafilter", "${PODS_ROOT}/ffmpegframework/include", "${PODS_ROOT}/orangefilter/include", "${PODS_ROOT}/yyaudiodsp/include", $dir + "/core/3rd/libyuv/include"], 
-  # 'VALID_ARCHS[sdk=iphonesimulator*]' => 'x86_64', 
-  # 'LIBRARY_SEARCH_PATHS' => ["${PODS_ROOT}/venus/libs", "${PODS_ROOT}/yyaudiodsp/libs"],
-
-#   s.pod_target_xcconfig = { "HEADER_SEARCH_PATHS" => [$dir + "/core", $dir + "/core/cmdline/apple_include", $dir + "/core/cmdline/apple_include/config", $dir + "/core/cmdline/apple_include/libavutil", $dir + "/core/cmdline/apple_include/libavcodec",
-#      $dir + "/core/3rd/libyuv/include"], 
-#   'VALID_ARCHS[sdk=iphonesimulator*]' => 'x86_64'],
-# 'ENABLE_BITCODE' => 'NO','DEFINES_MODULE' => 'NO', 'GCC_PREPROCESSOR_DEFINITIONS' => ['$(inherited)', "SKY_SUPPORT_FFMPEG_CMDLINE=1"]}
+  s.default_subspec = 'default'
+  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  
+  s.subspec 'default' do |sdc|
+      sdc.frameworks     = ios_frameworks
+      sdc.xcconfig       = {'HEADER_SEARCH_PATHS' => '${PODS_ROOT}/skymedia-ios/include','LD_RUNPATH_SEARCH_PATHS' => '@loader_path/../Frameworks'}
+      sdc.source_files   = '**/*.h'
+      sdc.preserve_paths = '*.framework'
+      sdc.ios.vendored_frameworks = "SkyMediaSDK.framework"
+  end
 
 end
