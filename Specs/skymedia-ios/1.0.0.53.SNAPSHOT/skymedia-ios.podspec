@@ -28,7 +28,6 @@ skymedia flutter plugin.
   s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   
   s.subspec 'default' do |sdc|
-      sdc.frameworks     = ios_frameworks
       sdc.xcconfig       = {'HEADER_SEARCH_PATHS' => '${PODS_ROOT}/SkyMediaSDK/include','LD_RUNPATH_SEARCH_PATHS' => '@loader_path/../Frameworks'}
       sdc.source_files   = '**/*.h'
       sdc.preserve_paths = '*.framework'
