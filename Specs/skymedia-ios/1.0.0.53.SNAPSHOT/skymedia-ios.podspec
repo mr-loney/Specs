@@ -14,11 +14,7 @@ skymedia flutter plugin.
   s.author           = { 'Your Company' => 'email@example.com' }
   s.source           = { :http => 'https://p-template-hk.oss-cn-hongkong.aliyuncs.com/ios_sdk/skymedia-ios_62.zip' }
 
-  # s.source_files = ['skymedia-ios/objc/**/*.{h,mm,m,c,cc,cpp}', 'mediafilter/**/*.{h,mm,m,c,cc,cpp}', 'core/**/*.{h,mm,m,c,cc,cpp}']
-  s.source_files = ['skymedia-ios/objc/**/*.{h,mm,m,c,cc,cpp}', 'core/**/*.{h,mm,m,c,cc,cpp}']
-  s.exclude_files = ['core/3rd/rapidjson/msinttypes/*.{h}', 'skymedia-ios/objc/codec/videotoolboxdec.{h,c}', "core/codec/encode/MediacodecEncoder.{h,cpp}"]
-
-  s.public_header_files = 'skymedia-ios/objc/Sky{*}.h'
+  s.public_header_files = 'Sky{*}.h'
 
   s.library = 'c++'
   s.header_dir = 'SkyMediaSDK'
@@ -33,7 +29,7 @@ skymedia flutter plugin.
   
   s.subspec 'default' do |sdc|
       sdc.frameworks     = ios_frameworks
-      sdc.xcconfig       = {'HEADER_SEARCH_PATHS' => '${PODS_ROOT}/skymedia-ios/include','LD_RUNPATH_SEARCH_PATHS' => '@loader_path/../Frameworks'}
+      sdc.xcconfig       = {'HEADER_SEARCH_PATHS' => '${PODS_ROOT}/SkyMediaSDK/include','LD_RUNPATH_SEARCH_PATHS' => '@loader_path/../Frameworks'}
       sdc.source_files   = '**/*.h'
       sdc.preserve_paths = '*.framework'
       sdc.ios.vendored_frameworks = "SkyMediaSDK.framework"
