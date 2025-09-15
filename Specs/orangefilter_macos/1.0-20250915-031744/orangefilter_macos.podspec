@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
         s.name     = "orangefilter_macos"
-        s.version  = "1.0_20250915_031744"
+        s.version  = "1.0-20250915-031744"
         s.summary  = "A iOS and macOS perbuilt lib for orangefilter."
         s.license  = {:type => 'BSD-licensed'}
         s.homepage = "http://www.sunsetlakesoftware.com"
