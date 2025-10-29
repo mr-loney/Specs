@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
 	s.name         = "libffmpeg"
-	s.version      = "5.1.7-dev1"
+	s.version      = "5.1.7-dev2"
 	s.summary      = "A iOS perbuilt lib for ffmpeg."
 	s.license      = {:type => 'LGPL v2.1+'}
 	s.homepage     = "http://www.ffmpeg.org/"
